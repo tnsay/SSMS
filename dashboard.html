@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Smart Student Management System</title>
+   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>SMS Admin</h3>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="students.html">Manage Students</a>
+                <a href="profile.html">Profile Settings</a>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="logoutBtn" class="logout-btn">Log Out</button>
+            </div>
+        </aside>
+
+        <!-- Main Workspace Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <h2>Welcome back, <span id="welcomeName">User</span>!</h2>
+            </header>
+
+            <!-- 9. DASHBOARD STATISTICS GRID -->
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <h4>Total Students</h4>
+                    <p id="statTotal">0</p>
+                </div>
+                <div class="stat-card pass">
+                    <h4>Passed Students</h4>
+                    <p id="statPassed">0</p>
+                </div>
+                <div class="stat-card fail">
+                    <h4>Failed Students</h4>
+                    <p id="statFailed">0</p>
+                </div>
+                <div class="stat-card alert">
+                    <h4>Average Score</h4>
+                    <p id="statAverage">0%</p>
+                </div>
+            </section>
+
+            <!-- Top Performing Student Summary Card -->
+            <section class="top-student-section">
+                <div class="top-card">
+                    <h3>🏆 Top Performing Student</h3>
+                    <div id="topStudentDetails">
+                        <p>No student data available yet.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Script tag executing system control flow -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

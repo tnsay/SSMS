@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Smart Student Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Create Account</h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="regName" required>
+                <span class="error-msg" id="errName"></span>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="regEmail" required>
+                <span class="error-msg" id="errEmail"></span>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="regPassword" required>
+                <span class="error-msg" id="errPassword"></span>
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" id="regConfirmPassword" required>
+                <span class="error-msg" id="errConfirm"></span>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="index.html">Login here</a></p>
+    </div>
+
+    <script type="module" src="js/auth.js"></script>
+</body>
+</html>
