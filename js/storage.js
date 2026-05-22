@@ -45,7 +45,7 @@ export const StorageEngine = {
 
     clearCurrentUser() {
         localStorage.removeItem(KEYS.LOGGED_IN_USER);
-    }
+    },
 
     getStudents() {
         return this.get(KEYS.STUDENTS) || [];
@@ -59,10 +59,6 @@ export const StorageEngine = {
     updateStudentsCollection(updatedArray) {
         this.set(KEYS.STUDENTS, updatedArray);
     }
-
-
-
-
 
 
 };

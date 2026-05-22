@@ -1,0 +1,52 @@
+.management-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    color: #2d3748;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.marks-grid {
+    display: flex;
+    gap: 10px;
+    background-color: #f7fafc;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.btn-submit {
+    background-color: #38a169;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #2f855a;
+}

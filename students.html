@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Students - SMS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/students.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Shared Navigation Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header"><h3>SMS Admin</h3></div>
+            <nav class="sidebar-menu">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="students.html" class="active">Manage Students</a>
+                <a href="profile.html">Profile Settings</a>
+            </nav>
+            <div class="sidebar-footer"><button id="logoutBtn" class="logout-btn">Log Out</button></div>
+        </aside>
+
+        <!-- Workspace content panel -->
+        <main class="main-content">
+            <header class="main-header">
+                <h2>Student Records Hub</h2>
+            </header>
+
+            <div class="management-grid">
+                <!-- Add Student Form Container -->
+                <section class="form-section card">
+                    <h3>Register New Student</h3>
+                    <form id="studentForm">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" id="studName">
+                            <span class="error-msg" id="errStudName"></span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Age</label>
+                                <input type="number" id="studAge">
+                                <span class="error-msg" id="errStudAge"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <select id="studGender">
+                                    <option value="">Select</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                                <span class="error-msg" id="errStudGender"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Course Track</label>
+                            <select id="studCourse">
+                                <option value="">Select Specialization</option>
+                                <option value="Computer Science">Computer Science</option>
+                                <option value="Information Technology">Information Technology</option>
+                                <option value="Software Engineering">Software Engineering</option>
+                            </select>
+                            <span class="error-msg" id="errStudCourse"></span>
+                        </div>
+                        <div class="marks-grid">
+                            <div class="form-group">
+                                <label>Math</label>
+                                <input type="number" id="markMath" placeholder="0-100">
+                                <span class="error-msg" id="errMarkMath"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Physics</label>
+                                <input type="number" id="markPhysics" placeholder="0-100">
+                                <span class="error-msg" id="errMarkPhysics"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Programming</label>
+                                <input type="number" id="markProg" placeholder="0-100">
+                                <span class="error-msg" id="errMarkProg"></span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit">Save Student Record</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Connected Module Driver -->
+    <script type="module" src="js/students.js"></script>
+</body>
+</html>

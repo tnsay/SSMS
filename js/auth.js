@@ -98,6 +98,8 @@ if (loginForm) {
         StorageEngine.setCurrentUser(userSessionData);
 
         alert(`Welcome back, ${userSessionData.fullName}!`);
-        window.location.href = 'dashboard.html';
+        // window.location.href = 'dashboard.html';
+        
+        window.location.replace('dashboard.html'); // Use replace to prevent back navigation to login
     });
 }
